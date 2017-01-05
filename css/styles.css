@@ -1,0 +1,54 @@
+		body {
+			padding:0;
+			margin:0;
+			height: 100%;
+		}
+		html{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+		}
+		#map {
+			height: 100%;
+		}
+		#controllers {
+			position: absolute;
+			z-index: 100;
+			bottom:100px;
+			left:50px;
+			background-color:rgba(0, 0, 0, 0.5);
+			border-radius: 3px;
+    		height: 450px;
+			width: 430px;
+		}
+		#text {
+			margin: 20px;
+			font-family: 'Helvetica Neue', sans-serif;
+			color: rgba(255, 255, 255, 0.85);
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		li { margin-bottom: 20px; }
+
+		.inner { display: inline-block; margin-right: 30px; vertical-align: middle; }
+
+		.push { margin-left: 38px; }
+
+		label { font-size: 12px; margin-left: 10px;}
+
+		input[type="checkbox"]:checked { color: red; }
+
+		a { text-decoration: none; color: #2B89EC; transition: all .4s ease; }
+		a:hover { text-decoration: none; }
+
+		#yellow { color: #FFF000; }
+		#yellow:hover{ color: #CCC000; }
+		#green { color: #6CC83D; }
+		#green:hover { color: #56A42E; }
+		#open:hover { color: #1370D1; }
+
+		.small {font-size: 14px;}

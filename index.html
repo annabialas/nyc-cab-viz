@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<title>City Driven by Cabs</title>
+	<link rel="shortcut icon" href="http://downloadicons.net/sites/default/files/taxi-taxi-icon-88580.png">
+
+	<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+	<link href='css/styles.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+</head>
+<body>
+	<div id="map"></div>
+	<div id="controllers">
+		<div id="text">
+			<h1>City Driven by Cabs</h1>
+			<h3><em>A visualization of NYC's medallion and boro taxi rides during the very first hour of the year 2015.</em></h3>
+			<br>
+			<ul>
+				<li>
+					<ul>
+						<li class="inner"><hr width="50px" size="3" noshade color="#FFF000"></li>
+						<li class="inner"><caption>Medallion Taxi Rides</caption></li>
+						<li class="inner"><input type="checkbox" checked onclick="toggleManhattan();"><label>toggle rides</label></li>
+					<ul>
+				</li>
+				<li>
+					<ul>
+						<li class="inner"><hr width="50px" size="3" noshade color="#6CC83D"></li>
+						<li class="inner"><caption>Boro Taxi Rides</caption></li>
+						<li class="inner"><input type="checkbox" class="push" checked onclick="toggleBrooklyn();"><label>toggle rides</label></li>
+					</ul>
+				</li>
+			</ul>
+			<p>Straight lines connecting each trip's pick-up and drop-off points were used as proxies for taxis' routes.</p>
+			<p>Made with <a href="https://data.cityofnewyork.us/view/ba8s-jw6u" id="yellow">this</a> and <a href="https://data.cityofnewyork.us/view/n4kn-dy2y" id="green">this</a> dataset.</p>
+			<br>
+			<p class="small"><em>Visualization made possible thanks to <a href="https://nycopendata.socrata.com/" id="open">NYC Open Data</a>.</em></p>
+		</div>
+	</div>
+  	<script type="text/javascript" src="data/js/databk.js"></script>
+  	<script type="text/javascript" src="data/js/datam.js"></script>
+  	<script type="text/javascript" src="js/map.js"></script>
+</body>
+</html>
